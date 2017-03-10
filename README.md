@@ -8,6 +8,7 @@ Copy 'OTStream+ConnectionStatus.h' and 'OTStream+ConnectionStatus.m' into your p
 
 Listen to OTStreamDelegate and OTSubscriberKitDelegate
 
+```objc
 //MARK: OTStreamDelegate
 - (void)session:(nonnull OTSession*)session streamCreated:(nonnull OTStream*)stream {
 	stream.isConnected = NO;
@@ -29,6 +30,7 @@ Listen to OTStreamDelegate and OTSubscriberKitDelegate
 	subscriber.stream.isConnected = YES;
 	...
 }
+```
 
 ## Authors
 
